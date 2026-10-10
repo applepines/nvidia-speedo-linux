@@ -68,6 +68,17 @@ It is not a population percentile or GPU health score.
 
 The CLI labels this value `normalized`; JSON uses `range_normalized_percent`.
 
+## Cross-checking on Windows
+
+You can compare results for the same GPU using:
+
+- [HWiNFO](https://www.hwinfo.com/): compare the **ASIC Quality (%)** reading.
+- [MSI Afterburner](https://forums.guru3d.com/threads/msi-afterburner-v4-6-7-beta-1-is-approaching.458132/post-6476990): compare **Speedo** in the diagnostic report's **GPU binning** section.
+
+These features require a supported version and GPU. Afterburner's diagnostic
+report also requires its private diagnostic features to be enabled, as described
+in the developer's linked instructions.
+
 ## Compatibility
 
 The current private VFE record layout was verified on **610.43.02**. Compatibility with
