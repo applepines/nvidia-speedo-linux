@@ -33,17 +33,12 @@ retry with `sudo python3 read_speedo.py`.
 ## Verified Results
 
 These values were read using NVIDIA Open Kernel Module / GSP **610.43.02**.
-Both the Speedo values and ranges matched Windows reports from the same cards.
 
 | GPU | Speedo | VFE Range | ASIC Quality (calculated) |
 |---|---:|---:|---:|
 | CMP 170HX | 1826 | 1695.34–1955.34 | 50.25% |
 | RTX 3090 | 1884 | 1708.27–2008.69 | 58.49% |
 | RTX 3090 Ti | 1870 | 1743.02–2013.02 | 47.03% |
-
-The RTX 3090 **58.49%** and RTX 3090 Ti **47.03%** results matched the
-user-provided HWiNFO ASIC Quality readings for the same cards. The CMP 170HX
-percentage has not been compared with HWiNFO.
 
 [Example JSON output](examples/result.json)
 
@@ -68,10 +63,8 @@ The tool does not write GPU registers or change voltages or clocks.
 ASIC Quality (%) = 100 × (Speedo − minimum) / (maximum − minimum)
 ```
 
-This percentage expresses the Speedo value's position within its VFE range and
-matched HWiNFO ASIC Quality on the RTX 3090 and RTX 3090 Ti listed above.
-It is not a population percentile or GPU health score. Agreement with HWiNFO on
-other GPUs or driver versions has not been verified.
+This percentage expresses the Speedo value's position within its VFE range.
+It is not a population percentile or GPU health score.
 
 The CLI labels this value `normalized`; JSON uses `range_normalized_percent`.
 
