@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-10-10T01:09:53.617385+00:00",
+  "driver_version": "610.43.02",
+  "method": "NVIDIA RM cached VFE GET_INFO and GET_CONTROL",
+  "gpu_register_writes": false,
+  "cards": [
+    {
+      "pci_address": "0000:04:00.0",
+      "name": "NVIDIA CMP 170HX",
+      "pci_device_id": "10de:20c2",
+      "vfe_index": 6,
+      "speedo": 1826,
+      "register": "0x008204A8",
+      "bits": [
+        0,
+        11
+      ],
+      "range_min": 1695.3399658203125,
+      "range_max": 1955.3399658203125,
+      "range_normalized_percent": 50.25385929987981,
+      "linux_confirmed": true
+    },
+    {
+      "pci_address": "0000:05:00.0",
+      "name": "NVIDIA GeForce RTX 3090 Ti",
+      "pci_device_id": "10de:2203",
+      "vfe_index": 10,
+      "speedo": 1870,
+      "register": "0x008204A8",
+      "bits": [
+        0,
+        11
+      ],
+      "range_min": 1743.02001953125,
+      "range_max": 2013.02001953125,
+      "range_normalized_percent": 47.029622395833336,
+      "linux_confirmed": true
+    },
+    {
+      "pci_address": "0000:0a:00.0",
+      "name": "NVIDIA GeForce RTX 3090",
+      "pci_device_id": "10de:2204",
+      "vfe_index": 10,
+      "speedo": 1884,
+      "register": "0x008204A8",
+      "bits": [
+        0,
+        11
+      ],
+      "range_min": 1708.27001953125,
+      "range_max": 2008.68994140625,
+      "range_normalized_percent": 58.49478269349543,
+      "linux_confirmed": true
+    }
+  ]
+}

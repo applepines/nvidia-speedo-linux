@@ -1,0 +1,13 @@
+{
+  "description": "Private R610 VFE layout, observed on driver 610.43.02. Header and record count come from the RM response; buffer sizes come from the installed GSP method table.",
+  "info": {"command": "0x2080A0B1", "stride": 196},
+  "control": {"command": "0x2080A0B3", "stride": 44},
+  "fuse_type": 7,
+  "speedo_vfield_id": 7,
+  "vfield_id_offset": 64,
+  "cached_integer_offset": 8,
+  "range_offset": 4,
+  "low_bit_offset": 76,
+  "high_bit_offset": 77,
+  "register_offset": 80
+}
